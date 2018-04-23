@@ -1,0 +1,36 @@
+﻿@Html.DevExpress().PopupControl(settings => {
+    settings.Name = "ConfirmPopup";
+    settings.HeaderText = "Warning";
+
+    settings.PopupVerticalAlign = PopupVerticalAlign.WindowCenter;
+    settings.PopupHorizontalAlign = PopupHorizontalAlign.WindowCenter;
+
+    settings.SetContent(() => {
+        Html.DevExpress().FormLayout(form => {
+            form.Name = "ConfirmForm";
+            form.ColCount = 2;
+            form.SettingsItems.ShowCaption = DefaultBoolean.False;
+            form.Items.Add(i => {
+                i.NestedExtension().Label(label => {
+                    label.Name = "ConfirmLabel";
+                    label.Properties.EnableClientSideAPI = true;
+                    label.Text = "Are you sure?";
+                });
+                i.ColSpan = 2;
+            });
+            form.Items.Add(i => {
+                i.NestedExtension().Button(button => {
+                    button.Name = "ConfirmYes";
+                    button.Text = "Yes";
+                });
+            });
+            form.Items.Add(i => {
+                i.NestedExtension().Button(button => {
+                    button.Name = "ConfirmNo";
+                    button.Text = "No";
+                    button.ClientSideEvents.Click = "function(){ ConfirmPopup.Hide(); }";
+                });
+            });
+        }).Render();
+    });
+}).GetHtml()

@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<script type="text/javascript">
+    function OnClick(s, e) {
+        dxConfirm("Do you want to show an alert?")
+            .success(function() {
+                alert("success");
+            });
+    }
+</script>
+
+@Html.DevExpress().Button(settings => {
+    settings.Name = "Button";
+    settings.Text = "Show alert on Yes";
+    settings.ClientSideEvents.Click = "OnClick";
+}).GetHtml()
