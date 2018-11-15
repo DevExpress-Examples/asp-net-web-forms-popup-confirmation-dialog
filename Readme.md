@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [dxConfirm.js](./CS/T545638/Scripts/dxConfirm.js)
+* **[Index.cshtml](./CS/T545638/Views/Home/Index.cshtml)**
+* [_Layout.cshtml](./CS/T545638/Views/Shared/_Layout.cshtml)
+* [ConfirmPopup.cshtml](./CS/T545638/Views/Shared/ConfirmPopup.cshtml)
+<!-- default file list end -->
 # PopupControl - How to implement a confirmation dialog
 
 
