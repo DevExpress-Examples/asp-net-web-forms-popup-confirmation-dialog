@@ -7,6 +7,9 @@
 * [ConfirmPopup.cshtml](./CS/T545638/Views/Shared/ConfirmPopup.cshtml)
 <!-- default file list end -->
 # PopupControl - How to implement a confirmation dialog
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/t546332)**
+<!-- run online end -->
 
 
 In this example, we consider the confirmation dialog as a simple popup with a message and Yes/No buttons.<br><br>For this task, you need to place a popup into Layout view and place the label and buttons there:<br>
