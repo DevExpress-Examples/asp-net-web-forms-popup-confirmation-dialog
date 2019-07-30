@@ -8,7 +8,7 @@
 <!-- default file list end -->
 # PopupControl - How to implement a confirmation dialog
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t546332)**
+**[[Run Online]](https://codecentral.devexpress.com/t546332/)**
 <!-- run online end -->
 
 
