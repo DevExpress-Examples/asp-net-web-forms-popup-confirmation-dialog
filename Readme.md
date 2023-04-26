@@ -1,26 +1,17 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128553048/17.1.5%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T546332)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
-
-* [dxConfirm.js](./CS/T545638/Scripts/dxConfirm.js)
-* **[Index.cshtml](./CS/T545638/Views/Home/Index.cshtml)**
-* [_Layout.cshtml](./CS/T545638/Views/Shared/_Layout.cshtml)
-* [ConfirmPopup.cshtml](./CS/T545638/Views/Shared/ConfirmPopup.cshtml)
-<!-- default file list end -->
-# PopupControl - How to implement a confirmation dialog
+# Popup Control for ASP.NET Web Forms - How to create a confirmation dialog
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/t546332/)**
 <!-- run online end -->
 
+This example demonstrates how to use a pop-up window to display a confirmation dialog box.
 
-In this example, we consider the confirmation dialog as a simple popup with a message and Yes/No buttons.<br><br>For this task, you need to place a popup into Layout view and place the label and buttons there:<br>
+![Confirmation dialog](confirmationDialog.png)
 
+## Overview
 
-```cs
+Create a popup control and use the [SetContent](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.PopupControlSettingsBase.SetContent.overloads) method to populate the control with labels and buttons.
+
+```cshtml
 @Html.DevExpress().PopupControl(settings => {
     settings.SetContent(() => {
        //label and buttons
@@ -28,11 +19,9 @@ In this example, we consider the confirmation dialog as a simple popup with a me
 }).GetHtml()
 ```
 
+Create a JS function to show a pop-up window and add a handler to the **Yes** button `Click` event.
 
-And write a simple JS function that will show this popup and assign the handler to the Yes button:<br>
-
-
-```js
+```cshtml
 (function() {
     'use strict';
     window.dxConfirm = function(text) {
@@ -53,13 +42,9 @@ And write a simple JS function that will show this popup and assign the handler 
         ConfirmPopup.Hide();
     }
 })();
-
-
 ```
 
-
-Then, you will be able to use the dialog as follows:<br>
-
+After a user clicks the **Yes** button, an alert message is shown.
 
 ```js
 dxConfirm("Do you want to show an alert?")
@@ -69,9 +54,9 @@ dxConfirm("Do you want to show an alert?")
 
 ```
 
+## Files to Review
 
-Here, the string parameter is the message that will be shown in the popup and the function passed to <strong>success </strong>defines the action that will be performed after Yes is clicked.<br>If you pass an empty string, the default message will be shown. However, the success function is required as there is no point in using the dialog without it.
-
-<br/>
-
-
+* [dxConfirm.js](./CS/T545638/Scripts/dxConfirm.js)
+* [Index.cshtml](./CS/T545638/Views/Home/Index.cshtml)
+* [_Layout.cshtml](./CS/T545638/Views/Shared/_Layout.cshtml)
+* [ConfirmPopup.cshtml](./CS/T545638/Views/Shared/ConfirmPopup.cshtml)
