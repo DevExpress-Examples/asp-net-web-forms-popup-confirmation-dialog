@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T546332)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Popup Control for ASP.NET Web Forms - How to create a confirmation dialog
+# Popup Control for ASP.NET MVC - How to create a confirmation dialog
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/t546332/)**
 <!-- run online end -->
