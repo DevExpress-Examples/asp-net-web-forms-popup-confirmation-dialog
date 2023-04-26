@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # Popup Control for ASP.NET MVC - How to create a confirmation dialog
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t546332/)**
+**[[Run Online]](https://codecentral.devexpress.com/128553048/)**
 <!-- run online end -->
 
 This example demonstrates how to use a pop-up window to display a confirmation dialog box.
