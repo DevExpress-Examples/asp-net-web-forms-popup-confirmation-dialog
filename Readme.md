@@ -4,9 +4,6 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # Popup Control for ASP.NET MVC - How to create a confirmation dialog
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128553048/)**
-<!-- run online end -->
 
 This example demonstrates how to use a pop-up window to display a confirmation dialog box.
 
